@@ -5,6 +5,12 @@ body {
   font-family: Lato, sans-serif;
 }
 
+h1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
 .aaa {
   width: 500px;
   margin: 0 auto;
@@ -48,7 +54,7 @@ ul {
 }
 
 li, 
-h3 {
+h2 {
   list-style: none;
 }
 
@@ -72,7 +78,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
+h2,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -165,4 +171,9 @@ ul li.edit-mode input[type="text"] {
 
 ul li.edit-mode label {
   display: none;
+}
+
+section:first-child > h2 {
+  padding: 0;
+  border-bottom: none;
 }
